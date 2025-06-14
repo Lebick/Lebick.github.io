@@ -1,0 +1,110 @@
+.shortcut-container {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag-filter {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.tag-filter h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.tag-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.tag-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tag-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.tag-btn.active {
+    background: #4a90e2;
+}
+
+.shortcut-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.shortcut-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.shortcut-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.shortcut-item a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.shortcut-item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.shortcut-item p {
+    margin: 0 0 15px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(74, 144, 226, 0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #4a90e2;
+}
+
+/* 스크롤바 스타일링 */
+.shortcut-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.shortcut-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.shortcut-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.shortcut-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+} 

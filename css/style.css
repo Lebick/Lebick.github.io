@@ -1,0 +1,83 @@
+body{
+    margin:0px;
+}
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 10vh;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;        /* 오른쪽 여백 */
+    z-index:10;
+
+}
+
+header > .profile {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 10%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+header > button {
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    height: 100%;
+    font-size: 3vmin;
+}
+
+/* 드롭다운 메뉴 (처음엔 숨김) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 9.6%;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+    display: none;  /* ← 다시 강조: 이 줄이 중요 */
+    padding: 10px 0;
+}
+
+/* 하위 메뉴 내용 */
+.submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: green;
+    width:31.75%;
+}
+
+.submenu p {
+    font-weight: bold;
+
+    margin: 2% auto;
+}
+
+.submenu button {
+    border:none;
+    background-color: transparent;
+    color: black;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+.submenu button:hover {
+    color: #007bff;
+}
+
+/* 마우스 hover 시 드롭다운 표시 */
+.menu-container:hover .dropdown-menu {
+    display: flex;  /* hover 됐을 때만 보여짐 */
+}

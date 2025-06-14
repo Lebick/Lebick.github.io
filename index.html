@@ -1,6 +1,57 @@
 <!DOCTYPE html>
-<html lang=ko>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPage</title>
+    <link rel="stylesheet" href="stylesheet/index.css" />
+</head>
 <body>
-<h1>Hello, World!</h1>
+    <div class="container">
+        <div class="left-section">
+            <nav class="tabs">
+                <button class="tab-btn active" data-tab="shortcut">바로가기</button>
+                <button class="tab-btn" data-tab="project">프로젝트</button>
+            </nav>
+            <main class="content">
+                <iframe id="content-frame" src="subPage/shortcut.html" frameborder="0"></iframe>
+            </main>
+        </div>
+        <div class="right-section">
+            <div class="note-section">
+                <h3>노트</h3>
+                <div class="note-input">
+                    <textarea id="note-input" placeholder="노트를 입력하세요..."></textarea>
+                    <button id="add-note">추가</button>
+                </div>
+                <div id="notes-list">
+                    <!-- 노트가 여기에 동적으로 추가됩니다 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 일정 추가 모달 -->
+    <div class="modal" id="scheduleModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>일정 추가</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <form class="modal-form" id="scheduleForm">
+                <div class="form-group">
+                    <label for="scheduleDate">날짜</label>
+                    <input type="date" id="scheduleDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="scheduleContent">내용</label>
+                    <input type="text" id="scheduleContent" required>
+                </div>
+                <button type="submit" class="submit-btn">추가</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/index.js"></script>
 </body>
 </html>
