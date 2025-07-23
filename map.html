@@ -1277,10 +1277,6 @@
                             }
                         }
 
-                        if(!("tokenString" in data)){ // 임의 추가
-                            levickObjectList.add(object);
-                        }
-
                         // console.log(feature);
                         let tooltip = "";
                         let attribute = "";
@@ -1299,6 +1295,9 @@
                         }
                         // for objects either outside of a filter, or those inside a filter and currently exempt from the rules of said filter
                         if (feature.properties.filterToPlayers == null || (feature.properties.filterToPlayers != null && !(feature.properties.filterToPlayers.join(", ").toLowerCase()).includes(difficulty))) {
+                            if(!("tokenString" in data)){ // 임의 추가
+                                levickObjectList.add(object);
+                            }
                             if (object in standard_placed_object_icons) {
                                 if (standard) {
                                     icon = standard_placed_object_icons[object];
@@ -1777,6 +1776,7 @@
                 if (standard_placed_object_icons[item] == undefined) {
                     return;
                 }
+                
 
                 const test1234 = `
                 <div class="levickFilterList" onclick="ObjectFilter(this)" data-filter="${item}">
