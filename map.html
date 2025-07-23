@@ -1645,11 +1645,17 @@
         //-----------------------------임의 추가-----------------------------
 
         function PearlFocus(newRoom){
+            if(currentFilter != null){
+                ObjectFilter(currentFilter);
+            }
             room = newRoom;
             pushState();
         }
 
         function TokenFocus(newRegion, newRoom){
+            if(currentFilter != null){
+                ObjectFilter(currentFilter);
+            }
             region = newRegion;
             room = newRoom;
             pushState();
@@ -1791,6 +1797,9 @@
         var currentFilter;
 
         function ObjectFilter(target){
+            map.addLayer(placedObjectsLayer);
+            map.removeLayer(densLayer);
+
             document.querySelectorAll('.object-filter').forEach(el => {
                 el.style.display = 'none';
             });
@@ -1823,7 +1832,6 @@
             document.querySelectorAll('.object-filter').forEach(el => {
                 const img = el.querySelector('img');
                 if(img.alt == currentFilter.dataset.filter){
-                    console.log(img.alt);
                     el.style.display = '';
                 }
             });
@@ -1901,6 +1909,7 @@
             border-radius: 10px 10px 0 0;
             border: 2px solid #4B4653;
             float:left;
+            cursor: pointer;
         }
 
         #levickPearls, #levickFilters, #levickTokens{
@@ -1925,6 +1934,7 @@
             overflow:hidden;
             float:left;
             margin: 5px 5px;
+            cursor: pointer;
         }
         .levickFilterList>img{
             position: absolute;
@@ -1964,6 +1974,7 @@
             width:100px;
             text-align: center;
             top: -25px;
+            cursor: pointer;
         }
 
         .pageFill{
