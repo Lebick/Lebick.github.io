@@ -1,0 +1,102 @@
+            if (checked) {
+                equivalentregions = [
+                    ["UG", "DS"], ["DS", "UG"],
+                    ["CL", "SH"], ["SH", "CL"],
+                    ["SS", "RM"], ["RM", "SS"],
+                    ["DM", "MS"], ["MS", "DM"],
+                    ["SL", "LM"], ["LM", "SL"]];
+                pregions = slugcats[difficulty].regions;
+
+                for (const acronym in pregions) {
+                    if (pregion == acronym) {
+                        if (difficulty != n) {
+                            difficulty = n;
+                            region = pregion;
+                            room = slugcats[difficulty].startingRoom;
+                            pushState();
+                        }
+                    } else {
+                        for (pairs in equivalentregions) {
+                            if (pairs[0] == loadedRegion) {
+                                if (difficulty != n) {
+                                    difficulty = n;
+                                    region = pairs[1];
+                                    room = slugcats[difficulty].startingRoom;
+                                    pushState();
+                                }
+                            } else {
+                                if (difficulty != n) {
+                                    difficulty = n;
+                                    region = slugcats[difficulty].startingRegion;
+                                    room = slugcats[difficulty].startingRoom;
+                                    pushState();
+                                }
+                            }
+                        }
+                    }
+                }
+            } else {
+
+
+
+            NEW
+
+
+
+
+            if (pregion == "oe" && (pdifficulty != "white" || pdifficulty != "yellow" || pdifficulty != "gourmand")) {
+                region = "sb";
+                pushState();
+            }
+            if (pregion == "lc" && pdifficulty != "artificer") {
+                region = "uw";
+                pushState();
+            }
+            if (pregion == "ms" && (pdifficulty != "white" || pdifficulty != "yellow" || pdifficulty != "red" || pdifficulty != "gourmand" || pdifficulty != "rivulet" || pdifficulty != "saint")) {
+                region == "sl";
+                pushState();
+            }
+            if (pregion == "lm" && (pdifficulty != "artificer" || pdifficulty != "spear")) {
+                region = "sl";
+                pushState();
+            }
+            if (pregion == "sl" && (pdifficulty == "artificer" || pdifficulty == "spear")) {
+                region = "lm";
+                pushState();
+            }
+            if (pregion == "rm" && pdifficulty != "rivulet") {
+                region = "ss";
+                pushState();
+            }
+            if (pregion == "ss" && pdifficulty == "rivulet") {
+                region = "rm";
+                pushState();
+            }
+            if (pregion == "dm" && pdifficulty != "spear") {
+                region = "ms";
+                pushState();
+            }
+            if (pregion == "ms" && pdifficulty == "spear") {
+                region = "dm";
+                pushState();
+            }
+            if (pregion == "ug" && pdifficulty != "saint") {
+                region = "ds";
+                pushState();
+            }
+            if (pregion == "ds" && pdifficulty == "saint") {
+                region = "ug";
+                pushState();
+            }
+            if (pregion == "cl" && pdifficulty != "saint") {
+                region = "sh";
+                pushState();
+            }
+            if ((pregion == "sh" || pregion == "uw" || pregion == "ss") && pdifficulty == "saint") {
+                region = "cl";
+                pushState();
+            }
+            if (pregion == "hr" && pdifficulty != "saint") {
+                region = "sb";
+                pushState();
+            }

@@ -1,0 +1,453 @@
+{
+  "RedToken": [
+    {
+      "region": "SU",
+      "room": "SU_B06",
+      "tokenType": "SU"
+    },
+    {
+      "region": "HI",
+      "room": "HI_A06",
+      "tokenType": "HI"
+    },
+    {
+      "region": "DS",
+      "room": "DS_A01",
+      "tokenType": "DS"
+    },
+    {
+      "region": "GW",
+      "room": "GW_A25",
+      "tokenType": "GW"
+    },
+    {
+      "region": "LM",
+      "room": "LM_LEGENTRANCEARTY",
+      "tokenType": "LM"
+    },
+    {
+      "region": "VS",
+      "room": "VS_E02",
+      "tokenType": "VS"
+    },
+    {
+      "region": "SH",
+      "room": "SH_KELP",
+      "tokenType": "SH"
+    },
+    {
+      "region": "UW",
+      "room": "UW_D06",
+      "tokenType": "UW"
+    },
+    {
+      "region": "SS",
+      "room": "SS_E06",
+      "tokenType": "SS"
+    },
+    {
+      "region": "CC",
+      "room": "CC_OUTPUT",
+      "tokenType": "CC"
+    },
+    {
+      "region": "SI",
+      "room": "SI_B09",
+      "tokenType": "SI"
+    },
+    {
+      "region": "LF",
+      "room": "LF_D09",
+      "tokenType": "LF"
+    },
+    {
+      "region": "SB",
+      "room": "SB_J01",
+      "tokenType": "SB"
+    },
+    {
+      "region": "LC",
+      "room": "LC_02A",
+      "tokenType": "LC"
+    }
+  ],
+  "BlueToken": [
+    {
+      "region": "SU",
+      "room": "SU_B11",
+      "tokenType": "CicadaA"
+    },
+    {
+      "region": "SU",
+      "room": "SU_B14",
+      "tokenType": "DangleFruit"
+    },
+    {
+      "region": "SU",
+      "room": "SU_A30",
+      "tokenType": "PoleMimic"
+    },
+    {
+      "region": "HI",
+      "room": "HI_C13",
+      "tokenType": "FirecrackerPlant"
+    },
+    {
+      "region": "HI",
+      "room": "HI_A22",
+      "tokenType": "BlueLizard"
+    },
+    {
+      "region": "HI",
+      "room": "HI_C11",
+      "tokenType": "VultureGrub"
+    },
+    {
+      "region": "HI",
+      "room": "HI_C03",
+      "tokenType": "SmallCentipede"
+    },
+    {
+      "region": "DS",
+      "room": "DS_B04",
+      "tokenType": "Salamander"
+    },
+    {
+      "region": "DS",
+      "room": "DS_A25",
+      "tokenType": "BubbleGrass"
+    },
+    {
+      "region": "DS",
+      "room": "DS_A21",
+      "tokenType": "Hazer"
+    },
+    {
+      "region": "DS",
+      "room": "DS_A05",
+      "tokenType": "Leech"
+    },
+    {
+      "region": "DS",
+      "room": "DS_B06",
+      "tokenType": "Snail"
+    },
+    {
+      "region": "GW",
+      "room": "GW_A24",
+      "tokenType": "Scavenger"
+    },
+    {
+      "region": "GW",
+      "room": "GW_A24",
+      "tokenType": "FireSpear"
+    },
+    {
+      "region": "GW",
+      "room": "GW_A21",
+      "tokenType": "ScavengerBomb"
+    },
+    {
+      "region": "GW",
+      "room": "GW_C09",
+      "tokenType": "BrotherLongLegs"
+    },
+    {
+      "region": "GW",
+      "room": "GW_TOWER10",
+      "tokenType": "RedLizard"
+    },
+    {
+      "region": "LM",
+      "room": "LM_C01",
+      "tokenType": "JellyFish"
+    },
+    {
+      "region": "LM",
+      "room": "LM_E01",
+      "tokenType": "BigEel"
+    },
+    {
+      "region": "LM",
+      "room": "LM_A06",
+      "tokenType": "SeaLeech"
+    },
+    {
+      "region": "VS",
+      "room": "VS_A14",
+      "tokenType": "Pearl"
+    },
+    {
+      "region": "VS",
+      "room": "VS_A04",
+      "tokenType": "ZoopLizard"
+    },
+    {
+      "region": "VS",
+      "room": "VS_C03",
+      "tokenType": "LillyPuck"
+    },
+    {
+      "region": "VS",
+      "room": "VS_E06",
+      "tokenType": "EelLizard"
+    },
+    {
+      "region": "SH",
+      "room": "SH_A13",
+      "tokenType": "BigSpider"
+    },
+    {
+      "region": "SH",
+      "room": "SH_C03",
+      "tokenType": "Spider"
+    },
+    {
+      "region": "SH",
+      "room": "SH_C05",
+      "tokenType": "LanternMouse"
+    },
+    {
+      "region": "SH",
+      "room": "SH_B05",
+      "tokenType": "Lantern"
+    },
+    {
+      "region": "SH",
+      "room": "SH_E01",
+      "tokenType": "MirosBird"
+    },
+    {
+      "region": "SH",
+      "room": "SH_D03",
+      "tokenType": "FlareBomb"
+    },
+    {
+      "region": "UW",
+      "room": "UW_C02",
+      "tokenType": "YellowLizard"
+    },
+    {
+      "region": "UW",
+      "room": "UW_I01",
+      "tokenType": "SlimeMold"
+    },
+    {
+      "region": "UW",
+      "room": "UW_B01",
+      "tokenType": "TubeWorm"
+    },
+    {
+      "region": "SS",
+      "room": "SS_E05",
+      "tokenType": "DaddyLongLegs"
+    },
+    {
+      "region": "SS",
+      "room": "SS_C03",
+      "tokenType": "Inspector"
+    },
+    {
+      "region": "CC",
+      "room": "CC_C13",
+      "tokenType": "CyanLizard"
+    },
+    {
+      "region": "CC",
+      "room": "CC_A10",
+      "tokenType": "WhiteLizard"
+    },
+    {
+      "region": "CC",
+      "room": "CC_C04",
+      "tokenType": "Vulture"
+    },
+    {
+      "region": "CC",
+      "room": "CC_F01",
+      "tokenType": "DropBug"
+    },
+    {
+      "region": "SI",
+      "room": "SI_A07",
+      "tokenType": "KingVulture"
+    },
+    {
+      "region": "SI",
+      "room": "SI_C04",
+      "tokenType": "DandelionPeach"
+    },
+    {
+      "region": "SI",
+      "room": "SI_A18",
+      "tokenType": "Centiwing"
+    },
+    {
+      "region": "SI",
+      "room": "SI_D05",
+      "tokenType": "EggBug"
+    },
+    {
+      "region": "SI",
+      "room": "SI_B07x",
+      "tokenType": "VultureMask"
+    },
+    {
+      "region": "LF",
+      "room": "LF_F02",
+      "tokenType": "PuffBall"
+    },
+    {
+      "region": "LF",
+      "room": "LF_C03",
+      "tokenType": "Deer"
+    },
+    {
+      "region": "LF",
+      "room": "LF_D02",
+      "tokenType": "SporePlant"
+    },
+    {
+      "region": "LF",
+      "room": "LF_D06",
+      "tokenType": "FlyLure"
+    },
+    {
+      "region": "LF",
+      "room": "LF_A17",
+      "tokenType": "ScavengerBomb"
+    },
+    {
+      "region": "LF",
+      "room": "LF_A02",
+      "tokenType": "BigNeedleWorm"
+    },
+    {
+      "region": "LF",
+      "room": "LF_B04",
+      "tokenType": "SpitterSpider"
+    },
+    {
+      "region": "SB",
+      "room": "SB_H02",
+      "tokenType": "RedCentipede"
+    },
+    {
+      "region": "SB",
+      "room": "SB_E04",
+      "tokenType": "Mushroom"
+    },
+    {
+      "region": "SB",
+      "room": "SB_D04",
+      "tokenType": "BlackLizard"
+    },
+    {
+      "region": "SB",
+      "room": "SB_G02",
+      "tokenType": "BigCentipede"
+    },
+    {
+      "region": "SB",
+      "room": "SB_J03",
+      "tokenType": "TentaclePlant"
+    },
+    {
+      "region": "LC",
+      "room": "LC_scavtreasury",
+      "tokenType": "ElectricSpear"
+    },
+    {
+      "region": "LC",
+      "room": "LC_LAB01",
+      "tokenType": "SingularityBomb"
+    },
+    {
+      "region": "LC",
+      "room": "LC_topdoor",
+      "tokenType": "ScavengerElite"
+    }
+  ],
+  "GoldToken": [
+    {
+      "region": "SU",
+      "room": "SU_B14",
+      "tokenType": "SU"
+    },
+    {
+      "region": "HI",
+      "room": "HI_C13",
+      "tokenType": "HI"
+    },
+    {
+      "region": "DS",
+      "room": "DS_B10",
+      "tokenType": "DS"
+    },
+    {
+      "region": "GW",
+      "room": "GW_TOWER15",
+      "tokenType": "GWold"
+    },
+    {
+      "region": "LM",
+      "room": "LM_D04",
+      "tokenType": "LM"
+    },
+    {
+      "region": "VS",
+      "room": "VS_C04",
+      "tokenType": "VS"
+    },
+    {
+      "region": "SH",
+      "room": "SH_B04",
+      "tokenType": "SH"
+    },
+    {
+      "region": "UW",
+      "room": "UW_C02",
+      "tokenType": "UW"
+    },
+    {
+      "region": "CC",
+      "room": "CC_C13",
+      "tokenType": "CC"
+    },
+    {
+      "region": "CC",
+      "room": "CC_STRAINER01",
+      "tokenType": "gutter"
+    },
+    {
+      "region": "SI",
+      "room": "SI_C07",
+      "tokenType": "SI"
+    },
+    {
+      "region": "LF",
+      "room": "LF_B04",
+      "tokenType": "LF"
+    },
+    {
+      "region": "SB",
+      "room": "SB_F01",
+      "tokenType": "SB"
+    },
+    {
+      "region": "SB",
+      "room": "SB_G04",
+      "tokenType": "filter"
+    },
+    {
+      "region": "LC",
+      "room": "LC_streets",
+      "tokenType": "LC"
+    }
+  ],
+  "GreenToken": {
+    "region": "LC",
+    "room": "LC_SUBWAY04",
+    "tokenType": "Artificer"
+  }
+}

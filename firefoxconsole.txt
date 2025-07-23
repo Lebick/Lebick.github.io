@@ -1,0 +1,343 @@
+01:39:40.009 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user’s experience. For more help http://xhr.spec.whatwg.org/ global.js:250:12
+01:44:44.961 Loading: region {UW} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:45.390
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/uw/-3/-3_-1.png
+[HTTP/2 404 Not Found 24ms]
+
+01:44:45.391
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/uw/-3/-4_-1.png
+[HTTP/2 404 Not Found 25ms]
+
+01:44:45.392
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/uw/-3/-2_-1.png
+[HTTP/2 404 Not Found 25ms]
+
+01:44:45.398
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/uw/-3/-5_-1.png
+[HTTP/2 404 Not Found 23ms]
+
+01:44:45.400
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/uw/-3/-6_-1.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:45.400
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/uw/-3/-1_-1.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:45.453 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
+global.js:260:25
+01:44:45.826 Loading: region {SS} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:46.136 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
+global.js:260:25
+01:44:46.244
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/ss/-3/-5_0.png
+[HTTP/2 404 Not Found 22ms]
+
+01:44:46.245
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/ss/-3/0_-1.png
+[HTTP/2 404 Not Found 25ms]
+
+01:44:46.245
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/ss/-3/-1_-1.png
+[HTTP/2 404 Not Found 25ms]
+
+01:44:46.246
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/ss/-3/0_1.png
+[HTTP/2 404 Not Found 25ms]
+
+01:44:47.160 Loading: region {CC} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:47.641
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-4_-1.png
+[HTTP/2 404 Not Found 19ms]
+
+01:44:47.642
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-5_-1.png
+[HTTP/2 404 Not Found 24ms]
+
+01:44:47.642
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-2_1.png
+[HTTP/2 404 Not Found 25ms]
+
+01:44:47.643
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-1_1.png
+[HTTP/2 404 Not Found 24ms]
+
+01:44:47.643
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-5_1.png
+[HTTP/2 404 Not Found 24ms]
+
+01:44:47.671
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-6_0.png
+[HTTP/2 404 Not Found 19ms]
+
+01:44:47.672
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-6_1.png
+[HTTP/2 404 Not Found 20ms]
+
+01:44:47.672
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/cc/-3/-6_-1.png
+[HTTP/2 404 Not Found 20ms]
+
+01:44:47.678 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
+global.js:260:25
+01:44:48.076 Loading: region {SI} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:48.518
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/si/-3/-2_-1.png
+[HTTP/2 404 Not Found 20ms]
+
+01:44:48.520
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/si/-3/-1_-1.png
+[HTTP/2 404 Not Found 22ms]
+
+01:44:48.564 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
+global.js:260:25
+01:44:49.025 Loading: region {LF} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:49.587 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
+global.js:260:25
+01:44:49.973 Loading: region {SB} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:50.560 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
+global.js:260:25
+01:44:50.631
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-3_-1.png
+[HTTP/2 404 Not Found 21ms]
+
+01:44:50.633
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-3_1.png
+[HTTP/2 404 Not Found 28ms]
+
+01:44:50.637
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-4_-1.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:50.639
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-4_1.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:50.642
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-2_1.png
+[HTTP/2 404 Not Found 28ms]
+
+01:44:50.643
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-1_1.png
+[HTTP/2 404 Not Found 27ms]
+
+01:44:50.643
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-5_1.png
+[HTTP/2 404 Not Found 28ms]
+
+01:44:50.645
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-6_0.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:50.646
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-6_-1.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:50.648
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/-6_1.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:50.649
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/sb/-3/0_1.png
+[HTTP/2 404 Not Found 26ms]
+
+01:44:52.860 Loading: region {MS} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:53.346
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/ms/-3/-6_0.png
+[HTTP/2 404 Not Found 24ms]
+
+01:44:53.347
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/ms/-3/-6_-1.png
+[HTTP/2 404 Not Found 25ms]
+
+01:44:53.427 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
+global.js:260:25
+01:44:53.838 Loading: region {OE} on slugcat {yellow}, modded {false} map.html:612:21
+01:44:54.294
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/oe/-3/-3_0.png
+[HTTP/2 404 Not Found 19ms]
+
+01:44:54.303
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/oe/-3/-4_0.png
+[HTTP/2 404 Not Found 18ms]
+
+01:44:54.309
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/oe/-3/-4_1.png
+[HTTP/2 404 Not Found 19ms]
+
+01:44:54.310
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/oe/-3/-5_1.png
+[HTTP/2 404 Not Found 24ms]
+
+01:44:54.310
+GET
+https://raw.githubusercontent.com/NobleCat57/vanilla-1.9.07b/v1.9.07b/white/oe/-3/-5_0.png
+[HTTP/2 404 Not Found 24ms]
+
+01:44:54.399 missing icon for Overseer map.html:839:45
+01:44:54.407 TypeError: feature.properties.placedobjects is undefined
+    pointToLayer map.html:870
+    je GeoJSON.js:227
+    De GeoJSON.js:187
+    addData GeoJSON.js:117
+    addData GeoJSON.js:107
+    initialize GeoJSON.js:92
+    i Class.js:22
+    Ke GeoJSON.js:439
+    loadRegion map.html:866
+    onreadystatechange global.js:258
+    getJsonObject global.js:251
+    loadRegion map.html:626
+    newState map.html:454
+    pushState map.html:439
+    selectRegion map.html:319
+    onclick map.html:1
