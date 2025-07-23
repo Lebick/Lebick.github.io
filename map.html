@@ -1964,19 +1964,30 @@
             text-align: center;
             top: -25px;
         }
+
+        .pageFill{
+            position:absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            overflow:hidden;
+        }
     </style>
 
-    <div id="levickFinder">
-        <div id="finderActive" onClick="FinderActive()">▼</div>
-        <div style="color:#cccccc">ObjectFilter</div>
-        <div class="levickTabmenu">
-            <div id="tokenTab" class="tabActive" onClick="TabActive(this)">tokenList</div>
-            <div id="coloredpearlTab" onClick="TabActive(this)">coloredPearlList</div>
-            <div id="objectFilterTab" onClick="TabActive(this)">objectFilter</div>
+    <div class="pageFill">
+        <div id="levickFinder">
+            <div id="finderActive" onClick="FinderActive()">▼</div>
+            <div style="color:#cccccc">ObjectFilter</div>
+            <div class="levickTabmenu">
+                <div id="tokenTab" class="tabActive" onClick="TabActive(this)">tokenList</div>
+                <div id="coloredpearlTab" onClick="TabActive(this)">coloredPearlList</div>
+                <div id="objectFilterTab" onClick="TabActive(this)">objectFilter</div>
+            </div>
+            <div id="levickTokens" class="subTabActive"></div>
+            <div id="levickPearls"></div>
+            <div id="levickFilters"></div>
         </div>
-        <div id="levickTokens" class="subTabActive"></div>
-        <div id="levickPearls"></div>
-        <div id="levickFilters"></div>
     </div>
 </body>
 
