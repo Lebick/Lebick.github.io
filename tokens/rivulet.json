@@ -128,11 +128,6 @@
       "tokenType": "Leech"
     },
     {
-      "region": "DS",
-      "room": "DS_B06",
-      "tokenType": "Snail"
-    },
-    {
       "region": "GW",
       "room": "GW_A24",
       "tokenType": "Scavenger"
@@ -149,18 +144,8 @@
     },
     {
       "region": "GW",
-      "room": "GW_A14",
-      "tokenType": "RedLizard"
-    },
-    {
-      "region": "GW",
       "room": "GW_D02",
       "tokenType": "WaterNut"
-    },
-    {
-      "region": "GW",
-      "room": "GW_C09",
-      "tokenType": "BrotherLongLegs"
     },
     {
       "region": "SL",
@@ -174,11 +159,6 @@
     },
     {
       "region": "SL",
-      "room": "SL_E01",
-      "tokenType": "BigEel"
-    },
-    {
-      "region": "SL",
       "room": "SL_A06",
       "tokenType": "SeaLeech"
     },
@@ -186,16 +166,6 @@
       "region": "VS",
       "room": "VS_A14",
       "tokenType": "Pearl"
-    },
-    {
-      "region": "VS",
-      "room": "VS_A04",
-      "tokenType": "ZoopLizard"
-    },
-    {
-      "region": "VS",
-      "room": "VS_C03",
-      "tokenType": "LillyPuck"
     },
     {
       "region": "VS",
@@ -234,11 +204,6 @@
     },
     {
       "region": "UW",
-      "room": "UW_I01",
-      "tokenType": "SlimeMold"
-    },
-    {
-      "region": "UW",
       "room": "UW_C02RIV",
       "tokenType": "YellowLizard"
     },
@@ -254,11 +219,6 @@
     },
     {
       "region": "CC",
-      "room": "CC_C13",
-      "tokenType": "CyanLizard"
-    },
-    {
-      "region": "CC",
       "room": "CC_A10",
       "tokenType": "WhiteLizard"
     },
@@ -266,16 +226,6 @@
       "region": "CC",
       "room": "CC_C04",
       "tokenType": "Vulture"
-    },
-    {
-      "region": "CC",
-      "room": "CC_F01",
-      "tokenType": "DropBug"
-    },
-    {
-      "region": "SI",
-      "room": "SI_A07",
-      "tokenType": "KingVulture"
     },
     {
       "region": "SI",
@@ -304,11 +254,6 @@
     },
     {
       "region": "LF",
-      "room": "LF_C03",
-      "tokenType": "Deer"
-    },
-    {
-      "region": "LF",
       "room": "LF_D02",
       "tokenType": "SporePlant"
     },
@@ -324,18 +269,8 @@
     },
     {
       "region": "LF",
-      "room": "LF_A02",
-      "tokenType": "BigNeedleWorm"
-    },
-    {
-      "region": "LF",
       "room": "LF_B04",
       "tokenType": "SpitterSpider"
-    },
-    {
-      "region": "SB",
-      "room": "SB_H02",
-      "tokenType": "RedCentipede"
     },
     {
       "region": "SB",
@@ -351,11 +286,6 @@
       "region": "SB",
       "room": "SB_G02",
       "tokenType": "BigCentipede"
-    },
-    {
-      "region": "SB",
-      "room": "SB_J03",
-      "tokenType": "TentaclePlant"
     },
     {
       "region": "MS",

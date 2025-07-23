@@ -135,11 +135,6 @@
     {
       "region": "GW",
       "room": "GW_A24",
-      "tokenType": "Scavenger"
-    },
-    {
-      "region": "GW",
-      "room": "GW_A24",
       "tokenType": "FireSpear"
     },
     {
@@ -189,18 +184,8 @@
     },
     {
       "region": "VS",
-      "room": "VS_A04",
-      "tokenType": "ZoopLizard"
-    },
-    {
-      "region": "VS",
       "room": "VS_C03",
       "tokenType": "LillyPuck"
-    },
-    {
-      "region": "VS",
-      "room": "VS_E06",
-      "tokenType": "EelLizard"
     },
     {
       "region": "SH",
@@ -246,11 +231,6 @@
       "region": "UW",
       "room": "UW_B01",
       "tokenType": "TubeWorm"
-    },
-    {
-      "region": "SS",
-      "room": "SS_E05",
-      "tokenType": "DaddyLongLegs"
     },
     {
       "region": "SS",
@@ -376,11 +356,6 @@
       "region": "MS",
       "room": "MS_MEMOUTSIDE",
       "tokenType": "BigJelly"
-    },
-    {
-      "region": "MS",
-      "room": "MS_COMMS",
-      "tokenType": "MirosVulture"
     }
   ],
   "GoldToken": [

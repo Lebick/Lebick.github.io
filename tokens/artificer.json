@@ -134,16 +134,6 @@
     },
     {
       "region": "GW",
-      "room": "GW_A24",
-      "tokenType": "Scavenger"
-    },
-    {
-      "region": "GW",
-      "room": "GW_A24",
-      "tokenType": "FireSpear"
-    },
-    {
-      "region": "GW",
       "room": "GW_A21",
       "tokenType": "ScavengerBomb"
     },
@@ -179,18 +169,8 @@
     },
     {
       "region": "VS",
-      "room": "VS_A04",
-      "tokenType": "ZoopLizard"
-    },
-    {
-      "region": "VS",
       "room": "VS_C03",
       "tokenType": "LillyPuck"
-    },
-    {
-      "region": "VS",
-      "room": "VS_E06",
-      "tokenType": "EelLizard"
     },
     {
       "region": "SH",
@@ -239,11 +219,6 @@
     },
     {
       "region": "SS",
-      "room": "SS_E05",
-      "tokenType": "DaddyLongLegs"
-    },
-    {
-      "region": "SS",
       "room": "SS_C03",
       "tokenType": "Inspector"
     },
@@ -271,11 +246,6 @@
       "region": "SI",
       "room": "SI_A07",
       "tokenType": "KingVulture"
-    },
-    {
-      "region": "SI",
-      "room": "SI_C04",
-      "tokenType": "DandelionPeach"
     },
     {
       "region": "SI",

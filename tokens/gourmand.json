@@ -133,11 +133,6 @@
       "tokenType": "Leech"
     },
     {
-      "region": "DS",
-      "room": "DS_B06",
-      "tokenType": "Snail"
-    },
-    {
       "region": "GW",
       "room": "GW_A24",
       "tokenType": "Scavenger"
@@ -151,11 +146,6 @@
       "region": "GW",
       "room": "GW_A21",
       "tokenType": "ScavengerBomb"
-    },
-    {
-      "region": "GW",
-      "room": "GW_A14",
-      "tokenType": "RedLizard"
     },
     {
       "region": "GW",
@@ -174,11 +164,6 @@
     },
     {
       "region": "SL",
-      "room": "SL_F02",
-      "tokenType": "JetFish"
-    },
-    {
-      "region": "SL",
       "room": "SL_E01",
       "tokenType": "BigEel"
     },
@@ -194,18 +179,8 @@
     },
     {
       "region": "VS",
-      "room": "VS_A04",
-      "tokenType": "ZoopLizard"
-    },
-    {
-      "region": "VS",
       "room": "VS_C03",
       "tokenType": "LillyPuck"
-    },
-    {
-      "region": "VS",
-      "room": "VS_E06",
-      "tokenType": "EelLizard"
     },
     {
       "region": "SH",
@@ -251,16 +226,6 @@
       "region": "UW",
       "room": "UW_B01",
       "tokenType": "TubeWorm"
-    },
-    {
-      "region": "SS",
-      "room": "SS_E05",
-      "tokenType": "DaddyLongLegs"
-    },
-    {
-      "region": "SS",
-      "room": "SS_C03",
-      "tokenType": "Inspector"
     },
     {
       "region": "CC",
@@ -338,16 +303,6 @@
       "tokenType": "BigNeedleWorm"
     },
     {
-      "region": "LF",
-      "room": "LF_B04",
-      "tokenType": "SpitterSpider"
-    },
-    {
-      "region": "SB",
-      "room": "SB_H02",
-      "tokenType": "RedCentipede"
-    },
-    {
       "region": "SB",
       "room": "SB_E04",
       "tokenType": "Mushroom"
@@ -368,26 +323,6 @@
       "tokenType": "TentaclePlant"
     },
     {
-      "region": "MS",
-      "room": "MS_VENT10",
-      "tokenType": "AquaCenti"
-    },
-    {
-      "region": "MS",
-      "room": "MS_VENT15",
-      "tokenType": "GlowWeed"
-    },
-    {
-      "region": "MS",
-      "room": "MS_MEMOUTSIDE",
-      "tokenType": "BigJelly"
-    },
-    {
-      "region": "MS",
-      "room": "MS_COMMS",
-      "tokenType": "MirosVulture"
-    },
-    {
       "region": "OE",
       "room": "OE_RUIN25",
       "tokenType": "SpitLizard"
@@ -406,11 +341,6 @@
       "region": "OE",
       "room": "OE_JUNGLE04",
       "tokenType": "GooieDuck"
-    },
-    {
-      "region": "OE",
-      "room": "OE_PUMP04",
-      "tokenType": "SlugNPC"
     }
   ],
   "GoldToken": [
