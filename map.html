@@ -1320,7 +1320,10 @@
                         // for objects either outside of a filter, or those inside a filter and currently exempt from the rules of said filter
                         if (feature.properties.filterToPlayers == null || (feature.properties.filterToPlayers != null && !(feature.properties.filterToPlayers.join(", ").toLowerCase()).includes(difficulty))) {
                             if(!("tokenString" in data)){ // 임의 추가
-                                levickObjectList.add(object);
+                                if(object == 'UniqueDataPearl')
+                                    levickObjectList.add('DataPearl');
+                                else
+                                    levickObjectList.add(object);
                             }
                             if (object in standard_placed_object_icons) {
                                 if (standard) {
@@ -1833,14 +1836,14 @@
             target.innerHTML = '';
 
             levickObjectList.forEach((item, index) =>{
-                if (standard_placed_object_icons[item] == undefined) {
+                if (standard_placed_object_icons[item] == undefined && pearl_icons[item] == undefined) {
                     return;
                 }
                 
 
                 const test1234 = `
                 <div class="levickFilterList" onclick="ObjectFilter(this)" data-filter="${item}">
-                    <img id="asdfTest" src="resources/icons/${standard_placed_object_icons[item]}.png">
+                    <img id="asdfTest" src="resources/icons/${standard_placed_object_icons[item] != undefined ? standard_placed_object_icons[item] : pearl_icons[item]}.png">
                 </div>
                 `;
 
@@ -1928,7 +1931,7 @@
         function ShowCurrentFilter(){
             document.querySelectorAll('.object-filter').forEach(el => {
                 const img = el.querySelector('img');
-                if(img.alt == currentFilter.dataset.filter){
+                if(img.alt == currentFilter.dataset.filter || (currentFilter.dataset.filter == 'DataPearl' && img.alt == 'UniqueDataPearl')){
                     el.style.display = '';
                 }
             });
