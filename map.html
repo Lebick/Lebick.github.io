@@ -1807,7 +1807,10 @@
             });
         }
 
+        var defaultRoomOutline;
+
         function AddVistaPoints(){
+            defaultRoomOutline = roomsLayer.getLayers()[0].options.color;
             const target = document.getElementById('levickVistaPoints');
             target.innerHTML = '<p class="vistaDescription">(click = outlineToggle, doubleClick = focus)</p>';
             
@@ -1836,18 +1839,13 @@
                     target.insertAdjacentHTML('beforeend', test1234);
                 }
             }, false);
-
-            for (let l of roomsLayer.getLayers()) {
-                console.log(l);
-            }
-
-            
         }
 
         function TestRoomOutline(roomName){
             for (let l of roomsLayer.getLayers()) {
                 if(l.feature.properties.name == roomName){
                     l.setStyle({weight: l.options.weight == 0 ? 30 : 0});
+                    l.setStyle({color: l.options.weight == 30 ? 'rgb(255, 255, 255)' : defaultRoomOutline});
                 }
             }
         }
