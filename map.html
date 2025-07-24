@@ -572,6 +572,7 @@
         }
 
         var levickTestPearlList = []; // 임의 추가
+        var levickTestBroadcastList = []; // 임의 추가
         var levickObjectList = new Set(); // 임의 추가
 
         var loadedCount = 1;
@@ -634,7 +635,9 @@
         function selectRegion(value) {
             let newmodded = false; // document.getElementById('modded-ckb').checked; // TODO modded slugcats and regions
             levickTestPearlList = []; // 임의 추가
+            levickTestBroadcastList = []; // 임의 추가
             levickObjectList = new Set(); // 임의 추가
+
             if (region != value) {
                 room = null;
             }
@@ -647,7 +650,24 @@
 
         function selectDifficulty(n, alt) {
             levickTestPearlList = []; // 임의 추가
+            levickTestBroadcastList = []; // 임의 추가
             levickObjectList = new Set(); // 임의 추가
+            
+            //임의 추가 시작
+            var tab = document.getElementById('broadcastTab');
+            if(n == 'spear'){
+                tab.classList.remove('notShow');
+            }
+            else{
+                tab.classList.add('notShow');
+                if(tab.classList.contains('tabActive'))
+                {
+                    tab.classList.remove('tabActive');
+                    TabActive(document.getElementById('tokenTab'));
+                }
+            }
+            //임의 추가 끝
+
             for (var i = 0; i < document.difficulty.difficulties.length; i++) {
                 if (document.difficulty.difficulties[i].value == n) {
                     document.difficulty.difficulties[i].checked = true;
@@ -1278,7 +1298,7 @@
                         }
 
                         if(object == "WhiteToken" && difficulty == "spear"){
-                            levickTestPearlList.push(new LevickPearlData(feature.properties.room, data.tokenString));
+                            levickTestBroadcastList.push(new LevickTokenData(region, feature.properties.room, data.tokenString));
                         }
 
                         // console.log(feature);
@@ -1447,6 +1467,7 @@
                 AddPearlDatas(); // 임의 추가
                 AddObjectFilters(); // 임의 추가
                 AddVistaPoints(); //임의 추가
+                AddBroadcastDatas(); //임의 추가
                 GetToken(); // 임의 추가
                 if (hadPlacedObjects) placedObjectsLayer.addTo(map);
                 overlays.addOverlay(placedObjectsLayer, "Placed Objects");
@@ -1706,7 +1727,6 @@
                     );
                 }
             
-                console.log(greenToken);
                 AddTokenDatas();
             }, false);
         }
@@ -1718,7 +1738,6 @@
             var currentDifficulty = new URLSearchParams(document.location.search).get("slugcat");
 
             if(greenToken != undefined && !(noToken.includes(currentDifficulty))){
-                console.log("test");
                 const test1234 = `
                 <div class="levickFilterList" onClick="TokenFocus('${greenToken.region}', '${greenToken.room}')">
                     <img id="asdfTest" src="resources/icons/Green_Token_icon.png" alt="이미지" style="opacity: 0.5;">
@@ -1770,21 +1789,43 @@
             const target = document.getElementById('levickPearls');
             target.innerHTML = '';
 
-
-            //broadcast_icons
-
-
             levickTestPearlList.forEach((item, index) =>{
-                var icon = pearl_icons[item.pearlType] == undefined ? broadcast_icons[item.pearlType] : pearl_icons[item.pearlType];
-
                 const test1234 = `
                 <div class="levickFilterList" onClick="PearlFocus('${item.room}')">
-                    <img id="asdfTest" src="resources/icons/${icon}.png" alt="이미지">
+                    <img id="asdfTest" src="resources/icons/${pearl_icons[item.pearlType]}.png" alt="이미지">
                 </div>
                 `;
 
                 target.insertAdjacentHTML('beforeend', test1234);
             });
+        }
+
+        function AddBroadcastDatas(){
+            const target = document.getElementById('levickBroadcasts');
+            target.innerHTML = '';
+
+            getJsonObject(`chatlog.json`, function (json) {
+                for(const key in json){
+                    for(const item of json[key]){
+                        var icon = broadcast_icons[item.tokenType];
+                        var description = item.tokenType.replace("Chatlog_", "");
+
+                        const test1234 = `
+                        <div class="levickVistaList" onClick="TokenFocus('${item.region}', '${item.room}')">
+                            <img id="asdfTest" src="resources/icons/${icon}.png" alt="이미지">
+                            <p class="levickVistaString">${description}</p>
+                        </div>
+                        `;
+
+                        target.insertAdjacentHTML('beforeend', test1234);
+                    }
+                }
+            }, false);
+
+            // levickTestBroadcastList.forEach((item, index) =>{
+            //     console.log(item);
+                
+            // });
         }
 
         function AddObjectFilters(){
@@ -1910,6 +1951,8 @@
                 SubTabActive(document.getElementById('levickFilters'));
             }else if(obj.id == "vistaPointTab"){
                 SubTabActive(document.getElementById('levickVistaPoints'));
+            }else if(obj.id == "broadcastTab"){
+                SubTabActive(document.getElementById('levickBroadcasts'));
             }
         }
 
@@ -1936,6 +1979,10 @@
         }
     </script>
     <style>
+        .notShow{
+            display:none !important;
+        }
+
         #levickFinder{
             position:absolute;
             left: 25px;
@@ -1971,7 +2018,7 @@
             cursor: pointer;
         }
 
-        #levickPearls, #levickFilters, #levickTokens, #levickVistaPoints{
+        #levickPearls, #levickFilters, #levickTokens, #levickVistaPoints, #levickBroadcasts{
             float:left;
             position: relative;
             margin: -17px 10px;
@@ -2072,6 +2119,10 @@
             width: 100%;
             height: 100%;
             overflow:hidden;
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            user-select:none;
         }
 
         .vistaDescription{
@@ -2087,15 +2138,15 @@
             <div class="levickTabmenu">
                 <div id="tokenTab" class="tabActive" onClick="TabActive(this)">tokenList</div>
                 <div id="coloredpearlTab" onClick="TabActive(this)">coloredPearlList</div>
+                <div id="broadcastTab" onClick="TabActive(this)" class="notShow">broadcastList</div>
                 <div id="objectFilterTab" onClick="TabActive(this)">objectFilter</div>
                 <div id="vistaPointTab" onClick="TabActive(this)">vistaPoint</div>
             </div>
             <div id="levickTokens" class="subTabActive"></div>
             <div id="levickPearls"></div>
             <div id="levickFilters"></div>
-            <div id="levickVistaPoints">
-                
-            </div>
+            <div id="levickVistaPoints"></div>
+            <div id="levickBroadcasts"></div>
         </div>
     </div>
 </body>
