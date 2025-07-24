@@ -1648,11 +1648,13 @@
             if(currentFilter != null){
                 ObjectFilter(currentFilter);
             }
+            map.addLayer(placedObjectsLayer);
             room = newRoom;
             pushState();
         }
 
         function TokenFocus(newRegion, newRoom){
+            map.addLayer(placedObjectsLayer);
             if(currentFilter != null){
                 ObjectFilter(currentFilter);
             }
