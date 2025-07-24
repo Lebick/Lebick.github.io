@@ -1442,6 +1442,7 @@
                 });
                 AddPearlDatas(); // 임의 추가
                 AddObjectFilters(); // 임의 추가
+                AddVistaPoints(); //임의 추가
                 GetToken(); // 임의 추가
                 if (hadPlacedObjects) placedObjectsLayer.addTo(map);
                 overlays.addOverlay(placedObjectsLayer, "Placed Objects");
@@ -1703,7 +1704,7 @@
             
                 console.log(greenToken);
                 AddTokenDatas();
-            }, true);
+            }, false);
         }
 
         function AddTokenDatas(){
@@ -1796,6 +1797,51 @@
             });
         }
 
+        function AddVistaPoints(){
+            const target = document.getElementById('levickVistaPoints');
+            target.innerHTML = '<p class="vistaDescription">(click = outlineToggle, doubleClick = focus)</p>';
+            
+
+            const params = new URLSearchParams(document.location.search);
+            const currentRegion = params.get("region");
+            const currentDifficulty = params.get("slugcat");
+
+            getJsonObject(`vistaPoint.json`, function (json) {
+                for(let a=0; a<3; a++){
+                    var addString = '';
+                    if(  ['artificer', 'spear'].includes(currentDifficulty) && ['GW_D01', 'GW_E02'].includes(json[currentRegion][a])){
+                        addString = '_PAST';
+                    }
+                    else if(currentDifficulty == 'rivulet' && json[currentRegion][a] == 'UW_C02'){
+                        addString = 'RIV';
+                    }
+
+                    const test1234 = `
+                    <div class="levickVistaList" onClick="TestRoomOutline('${json[currentRegion][a] + addString}')" ondblclick="PearlFocus('${json[currentRegion][a] + addString}')">
+                        <img id="asdfTest" src="resources/icons/Vista.png" alt="이미지">
+                        <p class="levickVistaString">${json[currentRegion][a] + addString}</p>
+                    </div>
+                    `;
+
+                    target.insertAdjacentHTML('beforeend', test1234);
+                }
+            }, false);
+
+            for (let l of roomsLayer.getLayers()) {
+                console.log(l);
+            }
+
+            
+        }
+
+        function TestRoomOutline(roomName){
+            for (let l of roomsLayer.getLayers()) {
+                if(l.feature.properties.name == roomName){
+                    l.setStyle({weight: l.options.weight == 0 ? 30 : 0});
+                }
+            }
+        }
+
         var currentFilter;
 
         function ObjectFilter(target){
@@ -1854,6 +1900,8 @@
             }
             else if(obj.id == "objectFilterTab"){
                 SubTabActive(document.getElementById('levickFilters'));
+            }else if(obj.id == "vistaPointTab"){
+                SubTabActive(document.getElementById('levickVistaPoints'));
             }
         }
 
@@ -1900,6 +1948,7 @@
             color:#4B4653;
             font-weight: normal;
             margin: 10px 10px;
+            margin-left: 20px;
             float:left;
             width: 100%;
         }
@@ -1914,12 +1963,12 @@
             cursor: pointer;
         }
 
-        #levickPearls, #levickFilters, #levickTokens{
+        #levickPearls, #levickFilters, #levickTokens, #levickVistaPoints{
             float:left;
             position: relative;
             margin: -17px 10px;
             border: 2px solid #cccccc;
-            border-radius: 0px 0px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
             width: calc(100% - 45px);
             height: 110px;
             padding:10px;
@@ -1938,7 +1987,27 @@
             margin: 5px 5px;
             cursor: pointer;
         }
+
         .levickFilterList>img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .levickVistaList{
+            position:relative;
+            width: 70px;
+            height: 35px;
+            border-radius: 5px;
+            border: 2px solid #4B4653;
+            overflow:hidden;
+            float:left;
+            margin: 5px 5px;
+            cursor: pointer;
+        }
+
+        .levickVistaList>img{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -1953,6 +2022,7 @@
             border-color:#cccccc !important;
             color:#cccccc !important;
             z-index: calc(100000);
+            border-bottom: 2px solid #0c0c0c !important;
         }
 
         .subTabActive{
@@ -1964,6 +2034,14 @@
             position: relative;
             text-align:center;
             font-size:14px;
+        }
+
+        .levickVistaString{
+            color: #cccccc;
+            position: relative;
+            text-align:center;
+            font-size:12px;
+            line-height: 25px;
         }
 
         #finderActive{
@@ -1987,6 +2065,11 @@
             height: 100%;
             overflow:hidden;
         }
+
+        .vistaDescription{
+            color:white;
+            margin: 0px;
+        }
     </style>
 
     <div class="pageFill" style="pointer-events: none;">
@@ -1997,10 +2080,14 @@
                 <div id="tokenTab" class="tabActive" onClick="TabActive(this)">tokenList</div>
                 <div id="coloredpearlTab" onClick="TabActive(this)">coloredPearlList</div>
                 <div id="objectFilterTab" onClick="TabActive(this)">objectFilter</div>
+                <div id="vistaPointTab" onClick="TabActive(this)">vistaPoint</div>
             </div>
             <div id="levickTokens" class="subTabActive"></div>
             <div id="levickPearls"></div>
             <div id="levickFilters"></div>
+            <div id="levickVistaPoints">
+                
+            </div>
         </div>
     </div>
 </body>
