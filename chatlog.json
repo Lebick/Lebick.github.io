@@ -1,0 +1,51 @@
+{
+  "Chatlog_Broadcast": [
+    { "region": "UW", "room": "UW_J01", "tokenType": "Chatlog_Broadcast0" },
+    { "region": "LM", "room": "LM_EDGE02", "tokenType": "Chatlog_Broadcast1" },
+    { "region": "SS", "room": "SS_D08", "tokenType": "Chatlog_Broadcast1" },
+    { "region": "SU", "room": "SU_A17", "tokenType": "Chatlog_Broadcast2" },
+    { "region": "SH", "room": "SH_B03", "tokenType": "Chatlog_Broadcast3" },
+    { "region": "SB", "room": "SB_C07", "tokenType": "Chatlog_Broadcast4" },
+    { "region": "HI", "room": "HI_B02", "tokenType": "Chatlog_Broadcast5" },
+    { "region": "LF", "room": "LF_D01", "tokenType": "Chatlog_Broadcast6" },
+    { "region": "DS", "room": "DS_A11", "tokenType": "Chatlog_Broadcast7" },
+    { "region": "VS", "room": "VS_B10", "tokenType": "Chatlog_Broadcast8" },
+    { "region": "VS", "room": "VS_A05", "tokenType": "Chatlog_Broadcast9" }
+  ],
+  "Chatlog_HI": [
+    { "region": "HI", "room": "HI_A18", "tokenType": "Chatlog_HI0" }
+  ],
+  "Chatlog_DS": [
+    { "region": "DS", "room": "DS_A19", "tokenType": "Chatlog_DS0" }
+  ],
+  "Chatlog_GW": [
+    { "region": "GW", "room": "GW_D01_PAST", "tokenType": "Chatlog_GW0" },
+    { "region": "GW", "room": "GW_E02_PAST", "tokenType": "Chatlog_GW1" },
+    { "region": "GW", "room": "GW_C04_PAST", "tokenType": "Chatlog_GW2" }
+  ],
+  "Chatlog_LM": [
+    { "region": "LM", "room": "LM_B04", "tokenType": "Chatlog_LM0" },
+    { "region": "LM", "room": "LM_TOWER02", "tokenType": "Chatlog_LM1" }
+  ],
+  "Chatlog_SH": [
+    { "region": "SH", "room": "SH_E05", "tokenType": "Chatlog_SH0" }
+  ],
+  "Chatlog_CC": [
+    { "region": "CC", "room": "CC_C11", "tokenType": "Chatlog_CC0" }
+  ],
+  "Chatlog_SI": [
+    { "region": "SI", "room": "SI_A07", "tokenType": "Chatlog_SI0" },
+    { "region": "SI", "room": "SI_A07", "tokenType": "Chatlog_SI1" },
+    { "region": "SI", "room": "SI_B02", "tokenType": "Chatlog_SI2" },
+    { "region": "SI", "room": "SI_C07", "tokenType": "Chatlog_SI3" },
+    { "region": "SI", "room": "SI_D05", "tokenType": "Chatlog_SI4" },
+    { "region": "SI", "room": "SI_B12", "tokenType": "Chatlog_SI5" }
+  ],
+  "Chatlog_SB": [
+    { "region": "SB", "room": "SB_F03", "tokenType": "Chatlog_SB0" }
+  ],
+  "Chatlog_DM": [
+    { "region": "DM", "room": "DM_WALL06", "tokenType": "Chatlog_DM0" },
+    { "region": "DM", "room": "DM_U07", "tokenType": "Chatlog_DM1" }
+  ]
+}
