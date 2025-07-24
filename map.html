@@ -1277,6 +1277,10 @@
                             }
                         }
 
+                        if(object == "WhiteToken" && difficulty == "spear"){
+                            levickTestPearlList.push(new LevickPearlData(feature.properties.room, data.tokenString));
+                        }
+
                         // console.log(feature);
                         let tooltip = "";
                         let attribute = "";
@@ -1766,10 +1770,16 @@
             const target = document.getElementById('levickPearls');
             target.innerHTML = '';
 
+
+            //broadcast_icons
+
+
             levickTestPearlList.forEach((item, index) =>{
+                var icon = pearl_icons[item.pearlType] == undefined ? broadcast_icons[item.pearlType] : pearl_icons[item.pearlType];
+
                 const test1234 = `
                 <div class="levickFilterList" onClick="PearlFocus('${item.room}')">
-                    <img id="asdfTest" src="resources/icons/${pearl_icons[item.pearlType]}.png" alt="이미지">
+                    <img id="asdfTest" src="resources/icons/${icon}.png" alt="이미지">
                 </div>
                 `;
 
