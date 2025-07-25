@@ -7,6 +7,7 @@
   "SH": ["SH_A14","SH_B05","SH_C08"],
   "VS": ["VS_C03","VS_F02","VS_H02"],
   "SL": ["SL_B01","SL_B04","SL_C04"],
+  "LM": ["LM_B01","LM_B04","LM_C04"],
   "SI": ["SI_C07","SI_D05","SI_D07"],
   "LF": ["LF_A10","LF_C01","LF_D02"],
   "UW": ["UW_A07","UW_C02","UW_J01"],
