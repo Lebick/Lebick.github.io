@@ -785,7 +785,7 @@
             } catch (e) {
                 console.error(e);
             }
-            var region_url = region.toUpperCase();
+            var region_url = region.toLowerCase();
             var roompath = `./slugcats/${region_url}/${pdifficulty}`;
             getJsonObject(`${roompath}/region.json`, function (json) {
                 var roomjson = json;
